@@ -1,0 +1,96 @@
+:root {
+  /*
+        :root sisältää käytetyt värit nettisivulla muuttujissa, jotta värien muuttaminen on helppoa
+    */
+  --main-color: #1b2023;
+  /* --secondary-color: #f2f2f2;
+  --accent-color: #f2f2f2; */
+  --green-color: #1a4c4a;
+  --text-color: #e3e5ee;
+  --text-color-75: #afafaf;
+  --text-color-50: #6e6e6e;
+  --text-color-25: #3d3d3d;
+  --font-family: "Oleo Script", cursive;
+}
+
+.bg-mainColor {
+  background-color: var(--main-color);
+}
+
+.main-font-family {
+  font-family: var(--font-family) !important;
+}
+.custom-margin {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.card-margin {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.green-color {
+  background-color: var(--green-color) !important;
+  /* transition: all 0.3s ease-in-out; */
+}
+.bg-etusivu {
+  /* filter: brightness(50%); */
+  background-color: #1a4c4a8b;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  background-image: url(img/rekka01.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* filter: brightness(50%); */
+}
+
+a {
+  color: var(--text-color) !important;
+  transition: 0.5s ease;
+  text-decoration: none !important;
+}
+
+.bg-grey {
+  background-color: #262a2d !important;
+}
+
+a:hover {
+  color: var(--text-color-50) !important;
+}
+
+li .active {
+  border-bottom: #1a4c4a solid 2px;
+  opacity: 1 !important;
+}
+.btn:hover {
+  box-shadow: 0 0 0.5em var(--text-color);
+  border: 1px solid var(--main-color) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: var(--text-color) !important;
+  transform: scale(1.1);
+
+  font-weight: 600;
+}
+
+.custom-rounded-card {
+  border-radius: 25px 25px 25px 25px;
+}
+.custom-rounded-card-top {
+  border-radius: 15px 15px 0 0;
+}
+.custom-rounded-card-bottom {
+  border-radius: 0 0 15px 15px;
+}
+
+.bg-fade {
+  background: linear-gradient(#1b2023, #1a4c4a, #1b2023);
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-etusivu {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
